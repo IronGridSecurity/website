@@ -1,0 +1,76 @@
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  background-color: #0d0d0d;
+  color: #e0f2f1;
+  line-height: 1.6;
+}
+a {
+  color: #00ffc8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.hero-section {
+  background: linear-gradient(to right, #000000, #0a0a0a, #001f1f);
+  color: #00ffc8;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+.hero-tagline {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #00ffc8;
+  color: #000;
+  border-radius: 5px;
+}
+.glitch-text {
+  font-size: 3em;
+  position: relative;
+  animation: flicker 2s infinite alternate;
+}
+@keyframes flicker {
+  0% {opacity: 1;}
+  50% {opacity: 0.8;}
+  100% {opacity: 1;}
+}
+.navbar {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  gap: 20px;
+}
+.navbar a {
+  font-weight: bold;
+}
+.section {
+  padding: 60px 20px;
+  border-bottom: 1px solid #222;
+}
+.section h2 {
+  color: #00ffc8;
+  margin-bottom: 15px;
+}
+blockquote {
+  border-left: 5px solid #00ffc8;
+  padding-left: 15px;
+  font-style: italic;
+  margin: 20px 0;
+}
+footer {
+  background: #0c0c0c;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #888;
+}
