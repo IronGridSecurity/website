@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Anatomy of a Phishing Attack</title><link rel="stylesheet" href="../style.css"></head>
+<body><div class="section"><h1>Anatomy of a Phishing Attack</h1>
+<p>Phishing remains one of the most effective tactics used by cybercriminals due to its simplicity and scalability. In this post, we’ll break down the anatomy of a real phishing attack, from the social engineering tricks used in the email to the technical setup behind the malicious payload.</p>
+<p>The attacker sent emails using a domain that closely resembled the target organization, changing just one character in the URL. The emails used urgent language—"Password Reset Required Immediately"—to prompt the user to act quickly. Once clicked, the user was redirected through a series of shorteners that masked the final destination: a cloned login page styled exactly like the company's Office 365 portal.</p>
+<h2>Technical Observations</h2>
+<ul>
+<li>The attacker used JavaScript to steal credentials in real time</li>
+<li>SSL was used to make the page look legitimate</li>
+<li>Browser fingerprinting was implemented to track user interaction</li>
+</ul>
+<p>By inspecting HTTP traffic and headers, our team was able to trace the phishing infrastructure to a C2 panel hosted on a compromised WordPress site. This highlights the importance of layered email defenses, user education, and real-time phishing simulations.</p>
+</div></body></html>
